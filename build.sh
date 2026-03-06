@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Override with LATEX_IMAGE if you prefer a different LaTeX container image.
-IMAGE="${LATEX_IMAGE:-texlive/texlive:latest}"
+# Override with LATEX_IMAGE if you prefer a different LaTeX container image. No particular reason for this specific image, just pinning for best practice. texlive doesn't seem to support versioned tags
+IMAGE="${LATEX_IMAGE:-texlive/texlive@sha256:62927d994f09aea455c8ea9da034af14764f9e2276a616b413545e7cec69c06b}"
 TARGET="${1:-haggadah.tex}"
 BUILD_DIR="${BUILD_DIR:-build}"
 
