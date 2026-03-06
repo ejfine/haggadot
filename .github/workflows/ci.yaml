@@ -22,3 +22,9 @@ jobs:
           root_file: |
             haggadah.tex
           docker_image: texlive/texlive@sha256:62927d994f09aea455c8ea9da034af14764f9e2276a616b413545e7cec69c06b
+
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v7.0.0
+        with:
+          name: PDF
+          path: haggadah.pdf
