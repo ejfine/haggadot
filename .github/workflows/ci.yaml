@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - 'gh-readonly-queue/**' # don't run (again) when on these special branches created during merge groups; the `on: merge_group` already triggers it.
+  merge_group:
+
+env:
+  PYTHONUNBUFFERED: True
+  PRE_COMMIT_HOME: ${{ github.workspace }}/.precommit_cache
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yaml
