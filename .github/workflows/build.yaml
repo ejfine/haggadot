@@ -44,7 +44,7 @@ jobs:
           work_in_root_file_dir: true
           docker_image: texlive/texlive@sha256:62927d994f09aea455c8ea9da034af14764f9e2276a616b413545e7cec69c06b
       - name: Rename PDF
-        run: mv main.pdf hallel.pdf
+        run: mv hallel/main.pdf hallel.pdf
       - name: Upload PDF file
         uses: actions/upload-artifact@v7.0.0
         with:
