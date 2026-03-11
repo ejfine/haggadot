@@ -13,9 +13,16 @@ env:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        wine_theme:
+          - abundance
+          - gratitude
     steps:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
+      - name: Set wine theme
+        run: sed -i 's|\\input{wine-themes/.*}|\\input{wine-themes/${{ matrix.wine_theme }}}|' main.tex
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v4
         with:
@@ -26,5 +33,5 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v7.0.0
         with:
-          name: PDF
+          name: haggadah-${{ matrix.wine_theme }}
           path: haggadah.pdf
