@@ -1,0 +1,447 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+%% 'includefoot' makes sure that the page numbers are in the printable area: https://tex.stackexchange.com/questions/49852/page-numbers-and-margins %%%
+\usepackage[papersize={8.5in,11in}, margin=0.5in, includefoot]{geometry}
+%\usepackage[papersize={5.5in,8.5in}, margin=0.5in, includefoot]{geometry}
+
+\usepackage{graphicx}
+
+\usepackage{multicol}
+% https://www.overleaf.com/learn/latex/Multiple_columns#Inserting_vertical_rulers
+%\setlength{\columnseprule}{1pt}
+%\def\columnseprulecolor{\color{blue}}
+
+
+\usepackage[]{qrcode}
+
+
+\usepackage{bookman} %Bookman Old Style font
+
+\usepackage{fontawesome} %lots of symbols..  i.e. \faBook
+
+\usepackage[parfill]{parskip} % have a new line and no indentation between paragraphs: https://tex.stackexchange.com/questions/74170/have-new-line-between-paragraphs-no-indentation
+
+%%%% customize spacing after headers https://tex.stackexchange.com/questions/53338/reducing-spacing-after-headings %%%
+\usepackage{titlesec}
+
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{4pt plus 4pt minus 2pt}{0pt plus 2pt minus 4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% have minipage environments use the same spacing  https://tex.stackexchange.com/questions/43002/how-to-preserve-the-same-parskip-in-minipage
+\makeatletter
+\newlength{\currentparskip}
+\setlength{\currentparskip}{\parskip}% save the value
+\newcommand{\@minipagerestore}{
+    \setlength{\parskip}{\currentparskip}% restore the value
+}
+\makeatother
+
+
+%%%%
+
+\usepackage{cite}
+
+
+\title{Passover Seder Haggaddah}
+%\author{Your Name, Roll No.}
+%\date{22nd of Adar, 5779}
+
+\usepackage{cjhebrew}
+
+
+\newenvironment{hebrewPrayer}
+    {\begin{cjhebrew}
+     \Large
+    }
+    { 
+    \end{cjhebrew}
+    }
+
+\newenvironment{hebrewTransliteration}{}{\par}
+\newenvironment{unreadHebrewTranslation}{\itshape}{\par}
+\newenvironment{hebrewTranslation}{}{\par}
+
+\newcommand{\god}{God}
+
+%%%%%% CJ Hebrew Shortcuts
+\newcommand{\hebrewVowelOh}{\textrm{\hspace{0.2em}}o\textrm{\hspace{-0.2em}}}
+
+\newcommand{\hebrewVowelTL}{A} % not right, but cjhebrew doesn't have it yet
+\newcommand{\hebrewVowelTripleDotL}{E} % not right, but cjhebrew doesn't have it yet
+\newcommand{\hebrewVowelDotDotL}{e} %not right, but cjhebrew doesn't have it
+\newcommand{\hebrewVowelL}{:}
+\newcommand{\hebrewVowelLineL}{a}
+
+\newcommand{\transliterateAdonai}{Ah-doe-nai}
+\newcommand{\transliterateEloheinu}{Eh-lo-hey-nu}
+
+\newcommand{\baruchAdonai}{b*Arw*k: 'at*Ah y:yA}
+\newcommand{\transliterateBaruchAdonai}{Bar-ooch a-ta {\transliterateAdonai}}
+\newcommand{\translateBaruchAdonai}{Blessed are You, Lord our \god}
+
+
+\newcommand{\baruchHaolam}{{\baruchAdonai} 'E:loh{\hebrewVowelDotDotL}nw* mElEk: hA`OlAm}
+\newcommand{\transliterateBaruchHaolam}{{\transliterateBaruchAdonai}, {\transliterateEloheinu} meh-lech ha-o-lahm}
+\newcommand{\translateBaruchHaolam}{{\translateBaruchAdonai}, Ruler of the universe}
+
+\newcommand{\baruchHagafen}{{\baruchHaolam} b*Or:' p*:riy hag*{\hebrewVowelTL}pEn}
+\newcommand{\transliterateBaruchHagafen}{{\transliterateBaruchHaolam} bo-rey pe-ri ha-ga-fen.}
+\newcommand{\translateBaruchHagafen}{{\translateBaruchHaolam}, Creator of the fruit of the vine.}
+
+\newcommand{\baruchVtzivanu}{{\baruchHaolam} 'a:+s:r qid*:+sAnU b*:mi.s:w{\hebrewVowelOh}tAyw w:.siw*AnU}
+\newcommand{\transliterateBaruchVtzivanu}{{\transliterateBaruchHaolam} ah-share keed-shanu b'meetz-voh-tav v'tzee-vah-nu}
+\newcommand{\translateBaruchVtzivanu}{{\translateBaruchHaolam}, who has taught us the way of holiness through commandments, and commands us}
+
+\newcommand{\standardWineBlessing}{
+\begin{hebrewPrayer}
+    {\baruchHagafen}\textrm{.}
+\end{hebrewPrayer}
+
+\begin{hebrewTransliteration}
+    {\transliterateBaruchHagafen}
+\end{hebrewTransliteration}
+
+\begin{unreadHebrewTranslation}
+    {\translateBaruchHagafen}
+\end{unreadHebrewTranslation}
+}
+
+%%%%%%
+
+\newcommand{\inlineSederAction}[1]{\faHandORight{}~\underline{#1}}
+\newcommand{\sederAction}[1]{\inlineSederAction{#1}\par}
+
+\newcommand{\sederStep}[2]{
+    %\begin{minipage}[t]{\textwidth}
+        %\begin{table}[]
+            \begin{tabular}{ll}
+                \textbf{#1} & 
+                    \begin{minipage}[t]{0.35\textwidth}
+                        #2
+                    \end{minipage}
+            \end{tabular}
+            \\[0.5em]
+        %\end{table}
+    %\end{minipage}
+}
+
+\newcommand{\sederSection}[2]{
+    \section*{#1 \Huge\cjRL{#2}}
+}
+
+\newcommand{\newReading}{\faBook{}\ }
+
+% Choose which wine theme to use:
+\input{wine-themes/gratitude}
+\input{wine-themes/last-year-summaries}
+
+
+\begin{document}
+
+\sederSection{Hallel}{hal*el}
+
+Additional Songs of Praise
+
+\vspace{1ex}
+\begin{minipage}[t]{\textwidth}
+\subsection*{Chad Gadya (One little goat)}
+\newReading According to modern Jewish commentators, what appears to be a light-hearted song may be symbolic. One interpretation is that Chad Gadya is about the different nations that have conquered the Land of Israel: The kid symbolizes the Jewish people, the cat, Assyria; the dog, Babylon; the stick, Persia; the fire, Macedonia; the water, Rome; the ox, the Saracens; the slaughterer, the Crusaders; the angel of death, the Turks. At the end, {\god} returns to send the Jews back to Israel. The recurring refrain of `two zuzim' is a reference to the two stone tablets given to Moses on Mount Sinai. \\
+
+\begin{multicols}{3}
+Chad gadya (2x) \\
+My father bought \\
+for two zuzim. \\
+Chad gadya (2x).
+
+Then came the cat \\
+And ate the kid \\
+My father bought \\
+for two zuzim. \\
+Chad gadya (2x).
+
+Then came the dog \\
+And bit the cat \\
+That ate the kid \\
+My father bought \\
+for two zuzim. \\
+Chad gadya (2x).
+
+Then came the stick \\
+And beat the dog \\
+That bit the cat \\
+That ate the kid \\
+My father bought \\
+for two zuzim. \\
+Chad gadya (2x).
+
+Then came the fire \\
+That burnt the stick \\
+That beat the dog \\
+That bit the cat \\
+That ate the kid \\
+My father bought \\
+for two zuzim. \\
+Chad gadya (2x).
+
+Then came the water \\
+That quenched the fire \\
+That burnt the stick \\
+That beat the dog \\
+That bit the cat \\
+That ate the kid \\
+My father bought \\
+for two zuzim. \\
+Chad gadya (2x).
+
+Then came the ox \\
+That drank the water \\
+That quenched the fire \\
+That burnt the stick \\
+That beat the dog \\
+That bit the cat \\
+That ate the kid \\
+My father bought \\
+for two zuzim. \\
+Chad gadya (2x).
+
+Then came the butcher \\
+That slaughtered the ox \\
+That drank the water \\ 
+That quenched the fire \\ 
+That burnt the stick \\
+That beat the dog \\
+That bit the cat \\
+That ate the kid \\
+My father bought \\
+for two zuzim. \\
+Chad gadya (2x).
+
+Then came the Angel of Death \\
+And killed the butcher \\
+That slaughtered the ox \\
+That drank the water \\
+That quenched the fire \\
+That burnt the stick \\
+That beat the dog \\
+That bit the cat \\
+That ate the kid \\
+My father bought \\
+for two zuzim. \\
+Chad gadya (2x).
+
+Then came the Holy One Blessed be He \\
+And slew the Angel of Death \\
+That killed the butcher \\
+That slaughtered the ox \\
+That drank the water \\
+That quenched the fire \\
+That burnt the stick \\
+That beat the dog \\
+That bit the cat \\
+That ate the kid \\
+My father bought \\
+for two zuzim. \\
+Chad gadya (2x).
+
+\end{multicols}
+\end{minipage}
+\pagebreak
+\subsection*{The Ballad of the Four Sons}
+\textit{Sung to the tune of ``Clementine''}
+\begin{multicols}{2}
+Said the father to his children \\
+At the Seder you will dine \\
+You will eat your fill of matzah \\
+You will drink four cups of wine. 
+
+Now this father had no daughters \\
+But his sons, they numbered four \\
+One was wise and one was wicked \\
+One was simple and a bore.
+
+And the fourth was sweet and winsome \\
+He was young and he was small \\
+While his brothers asked the questions \\
+He could scarcely speak at all. 
+
+Said the wise son to his father \\
+``Would you please explain the laws \\
+Or the customs of the Seder \\
+Will you please explain the cause?''
+
+And the father proudly answered, \\
+``As our fathers ate in speed, \\
+Ate the Paschal lamb 'ere midnight \\
+And from slavery were freed.''
+
+``So we follow their example \\
+And 'ere midnight must complete \\
+All the Seder; and we should not \\
+After twelve remain to eat.''
+
+Then did sneer the son so wicked \\
+``What does all this mean to you?'' \\
+And the father's voice was bitter \\
+As his grief and anger grew. 
+
+``If yourself you don't consider \\
+As a son of Israel \\
+Then for you this has no meaning \\
+You could be a slave as well.''
+
+Then the simple son said softly, \\
+``What is this?'' and quietly \\
+The good father told his offspring \\
+``We were freed from slavery.''
+
+But the youngest son was silent \\ 
+For he could not ask at all. \\
+And his eyes were bright with wonder \\
+As his father told him all. 
+
+Now dear children, heed the lesson \\
+And remember ever more \\
+What the father told his children \\
+Told his sons who numbered four.
+
+\end{multicols}
+
+\pagebreak
+\subsection*{Miriam's Song}
+\begin{multicols}{2}
+\underline{Chorus:} \\
+And the women dancing with their timbrels \\
+Followed Miriam as she sang her song \\
+Sing a song to the One whom we've exalted \\
+Miriam and the women danced, danced the whole night long.
+
+And Miriam was a weaver of unique variety \\
+The tapestry she wove was one which sang our history \\
+With every strand and every thread she crafted her delight \\
+A woman touched with spirit she dances toward the light.
+
+(Chorus)
+
+When Miriam stood upon the shores and gazed across the sea \\
+The wonder of this miracle she soon came to believe \\
+Whoever thought the sea would part with an outstretched hand \\
+And we would pass to freedom and march to the promised land.
+
+(Chorus)
+
+And Miriam the prophet took her timbrel in her hand \\
+And all the women followed her just as she had planned \\
+And Miriam raised her voice in song, she sang with praise and might \\
+We've just lived through a miracle, we're going to dance tonight.
+
+(Chorus)
+
+\end{multicols}
+\vspace{5em}
+\subsection*{Let My People Go}
+\begin{multicols}{2}
+When Israel was in Egypt land \\
+Let my people go. \\
+Oppressed so hard they could not stand \\
+Let my people go.
+
+\underline{Chorus:} \\
+Go down, Moses \\
+Way down to Egypt land \\
+Tell old Pharoah \\
+To let my people go.
+
+The Lord, by Moses, to Pharaoh said: \\
+Let my people go. \\
+If not, I’ll smite your first-born dead \\
+Let my people go!
+
+(Chorus)
+
+Your foes shall not before you stand \\
+Let my people go \\
+And you’ll possess fair Cannan's land \\
+Let my people go \\
+
+(Chorus)
+
+
+\end{multicols}
+\pagebreak
+\subsection*{Chozen Medley}
+\textit{Sung to the tunes of ``Let It Go'' and ``Do You Want to Build a Snowman?''}
+
+\begin{multicols}{2}
+The Nile ran fast through the desert that night \\
+But the water, it was red \\
+The kingdom was full of locusts, \\
+With frogs jumping in their beds \\
+The Jews were slaving, building Ramses and Pithom \\
+Moses said, ``it's time to say, shalom''
+
+Pharaoh said ``no, don't set them free'' \\
+He was a bad guy who brought us misery \\
+But {\god}'s strong hand began to show \\
+And thus said Mo: 
+
+Let them go, let them go, \\
+Or He'll plague Egypt some more \\
+Let them go, Pharaoh, \\
+Say the word and we're out the door
+
+This nightmare \\
+Needs to end today \\
+Let our tribe march on \\
+We won't let the waters stand in our way
+
+Do you want some afikoman? \\
+It's just unleavened bread \\
+Those four questions that I asked before, \\
+I have one more: \\
+Can I have cake instead?
+
+We once were slaves in Egypt \\
+And now we're not \\
+So that's why we don't eat rye
+
+Do you want some afikoman? \\
+You can feel free to say no, man \\
+How 'bout brei?
+
+{\god} took us out, and dayenu \\
+When we got to the sea, we walked right through \\
+There was no time for bread to rise Goodbye!
+
+Let us go, {\god} let us go \\
+We were gone before the dawn \\
+Let us go, Pharaoh \\
+Changed his mind, but we were gone
+
+Here we stand, \\
+On this holiday \\
+Bring the Seder on, \\
+Our freedom endures to this very day
+
+    \begin{center}
+        %\begin{minipage}[t]{3cm}
+        %    \qrcode[height=2cm]{Dummy code}
+        %\end{minipage}
+        \includegraphics[height=10em]{qr-codes/chozen-medley}
+    \end{center}
+
+\end{multicols}
+
+\input{uptown-passover}
+
+\input{seder-crew}
+
+
+
+
+\bibliographystyle{plain}
+%\bibliography{M335}
+
+\end{document}
