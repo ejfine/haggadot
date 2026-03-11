@@ -1,0 +1,24 @@
+
+
+## FAQs
+
+<details>
+<summary>Question 1</summary>
+
+Answer 1
+
+</details>
+
+<details>
+<summary>Question 2</summary>
+
+Answer 2
+
+</details>
+
+<details>
+<summary>Question 3</summary>
+
+Answer 3
+
+</details>
