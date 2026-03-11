@@ -4,7 +4,7 @@ on:
   workflow_call:
 
 jobs:
-  build:
+  build-haggadah:
     runs-on: ubuntu-24.04
     strategy:
       matrix:
@@ -29,3 +29,22 @@ jobs:
         with:
           name: haggadah-${{ matrix.wine_theme }}
           path: haggadah-${{ matrix.wine_theme }}.pdf
+
+  build-hallel:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6.0.2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: |
+            hallel/main.tex
+          docker_image: texlive/texlive@sha256:62927d994f09aea455c8ea9da034af14764f9e2276a616b413545e7cec69c06b
+      - name: Rename PDF
+        run: mv main.pdf hallel.pdf
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v7.0.0
+        with:
+          name: hallel
+          path: hallel.pdf
