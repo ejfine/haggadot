@@ -20,7 +20,7 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           root_file: |
-            haggadah.tex
+            main.tex
           docker_image: texlive/texlive@sha256:62927d994f09aea455c8ea9da034af14764f9e2276a616b413545e7cec69c06b
 
       - name: Upload PDF file
