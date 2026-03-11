@@ -12,26 +12,4 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
-    strategy:
-      matrix:
-        wine_theme:
-          - abundance
-          - gratitude
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v6.0.2
-      - name: Set wine theme
-        run: sed -i 's|\\input{wine-themes/.*}|\\input{wine-themes/${{ matrix.wine_theme }}}|' main.tex
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v4
-        with:
-          root_file: |
-            main.tex
-          docker_image: texlive/texlive@sha256:62927d994f09aea455c8ea9da034af14764f9e2276a616b413545e7cec69c06b
-
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v7.0.0
-        with:
-          name: haggadah-${{ matrix.wine_theme }}
-          path: haggadah.pdf
+    uses: ./.github/workflows/build.yaml
