@@ -13,3 +13,21 @@ env:
 jobs:
   build:
     uses: ./.github/workflows/build.yaml
+
+  required-check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    needs:
+      - build
+    if: always()
+    permissions: {}
+    steps:
+      - name: fail if prior job failure
+        run: |
+          success_pattern="^(skipped|success)$" # these are the possibilities: https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#needs-context
+
+          if [[ ! "${{ needs.build.result }}" =~ $success_pattern ]]; then
+            echo "❌ One or more jobs did not finish with skipped or success"
+            exit 1
+          fi
+          echo "✅ All jobs finished with skipped or success"
