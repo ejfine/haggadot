@@ -2,7 +2,7 @@
 
 Variants of the Haggadot have different readings for the four cups of wine during the Seder that allow the participants to reflect on different aspects of the concept of Freedom that Pesach celebrates.
 
-If you want to quickly scan the text of those readings (rather than looking at them in the context of the [full Haggadah PDF](../../../releases)), you can view the files in this folder.
+If you want to quickly scan the text of those readings (rather than looking at them in the context of the [full Haggadah PDF](../../../releases)), you can view the raw files in this folder.
 
 ## Overviews
 
