@@ -71,3 +71,14 @@ As Passover typically occurs very close to NCAA "March Madness", we've created o
 
 </details>
 
+<details>
+<summary>Are there any restrictions on using this?</summary>
+
+None! All the Haggadot are completely free to distribute and use as you wish.
+
+If you want to share the overall project with people, here's some example text:
+
+> We struggled to find Haggadot which were accessible to people who were not raised Jewish, a complete version of the Jewish experience, and struck a balance of consistent traditions year-to-year while not being the exact same text. Over the years we wrote our own Haggadot to solve this. We finally collated them all together [here](https://github.com/ejfine/haggadot?tab=readme-ov-file#permalink) if you're interested.
+
+</details>
+
