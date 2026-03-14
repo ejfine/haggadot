@@ -1,3 +1,6 @@
+# How can I download the Haggadot?
+
+Download the latest versions of the PDF files from the [GitHub Releases page](https://github.com/ejfine/haggadot/releases).
 
 
 ## FAQs
