@@ -1,6 +1,7 @@
+<a id="permalink"></a>
 # Why we made this
 
-<a id="permalink"></a>Passover is one of my favorite holidays, and I love hosting Seders. My wife was not raised Jewish, and we quickly realized that existing Haggadot had some substantial drawbacks for how we wanted to celebrate Passover.
+Passover is one of my favorite holidays, and I love hosting Seders. My wife was not raised Jewish, and we quickly realized that existing Haggadot had some substantial drawbacks for how we wanted to celebrate Passover.
 
 Some of the problems we ran into were:
 
