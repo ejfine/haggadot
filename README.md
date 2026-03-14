@@ -3,7 +3,7 @@
 Download the latest versions of the PDF files from the [GitHub Releases page](../../releases).
 
 # What are the the different themes of the Haggadot?
-
+On Shabbat we follow the same rituals each week, but reflect on a different Torah portion to add variety to the celebration. These Haggadot contain the same rites and rituals of the steps of the Seder, but each one has different readings around the four cups of wine to help us reflect on different aspects of the theme of Freedom. More details [here](./wine-themes/README.md).
 
 
 # FAQs
