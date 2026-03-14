@@ -18,7 +18,7 @@ Download the latest versions of the PDF files from the [GitHub Releases page](..
 
 # What are the different themes of the Haggadot?
 
-These Haggadot follow the same Seder structure, but each includes different readings around the four cups of wine to explore a different aspect of freedom, much like Shabbat services follow the same rituals each week, but reflect on a different Torah portion to add variety to the celebration.  More details [here](./wine-themes/README.md).
+These Haggadot follow the same Seder structure, but each includes different readings around the four cups of wine to explore a different aspect of freedom, much like Shabbat services follow the same rituals each week, but reflect on a different Torah portion to add variety to the celebration.  More details on the [theme descriptions](./wine-themes/README.md) page.
 
 
 # FAQs
