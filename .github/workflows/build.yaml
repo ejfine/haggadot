@@ -12,6 +12,7 @@ jobs:
           - abundance
           - gratitude
           - four-freedoms
+          - what-does-freedom-mean-to-you
     steps:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
