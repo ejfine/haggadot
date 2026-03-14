@@ -1,9 +1,12 @@
 # How can I download the Haggadot?
 
-Download the latest versions of the PDF files from the [GitHub Releases page](https://github.com/ejfine/haggadot/releases).
+Download the latest versions of the PDF files from the [GitHub Releases page](../../releases).
+
+# What are the the different themes of the Haggadot?
 
 
-## FAQs
+
+# FAQs
 
 <details>
 <summary>Why is the transliteration different than in other Haggadot?</summary>
