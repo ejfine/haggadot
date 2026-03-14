@@ -1,6 +1,6 @@
 # How can I download the Haggadot?
 
-<a id="permalink" />Download the latest versions of the PDF files from the [GitHub Releases page](../../releases).
+<a id="permalink"></a>Download the latest versions of the PDF files from the [GitHub Releases page](../../releases).
 
 # What are the different themes of the Haggadot?
 
