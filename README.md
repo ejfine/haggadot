@@ -33,6 +33,6 @@ The Hallel stays the same every year, while the themes for the cups of wine chan
 <details>
 <summary>How long are these Haggadot?</summary>
 
-There's some variation in the length of the readings in the different themes, but typically it the Seder takes around 30-45 minutes before the meal, and 20-30 minutes afterwards (also dependent on how many Hallel songs you choose to sing).
+There's some variation in the length of the readings in the different themes, but typically the Seder takes around 30-45 minutes before the meal, and 20-30 minutes afterwards (also dependent on how many Hallel songs you choose to sing).
 
 </details>
