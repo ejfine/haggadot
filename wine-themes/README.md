@@ -17,6 +17,9 @@ Learning strategies---adapted from David Cain's writings on Raptitude---to feel 
 ### [What does Freedom mean to you?](what-does-freedom-mean-to-you.tex)
 Reflecting on what "freedom" means to different people and what it means to each of us.
 
+### [Free Yourself for Effective Altruism](effective-altruism.tex)
+Exploring ways to make yourself more effective at bringing freedom to others.
+
 ### [Abundance](abundance.tex)
 Celebrating just how close worldwide freedom really is, including information from the book *Abundance* by Peter Diamandis and Steven Kotler.
 
