@@ -1,6 +1,7 @@
+<a id="the-top"></a>
 # How can I download the Haggadot?
 
-<a id="the-top"></a>Download the latest versions of the PDF files from the [GitHub Releases page](../../releases).
+Download the latest versions of the PDF files from the [GitHub Releases page](../../releases).
 
 # What are the different themes of the Haggadot?
 
