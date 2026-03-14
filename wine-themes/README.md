@@ -15,7 +15,7 @@ Short and simple descriptions of four different types of freedom---a recommended
 Learning strategies---adapted from David Cain's writings on Raptitude---to feel deep gratitude for the freedoms we enjoy, that we may better appreciate the importance of bringing freedom to the rest of the world.
 
 ### [What does Freedom mean to you?](what-does-freedom-mean-to-you.tex)
-Reflecting on what "freedom" means to different people and what it means to each of us
+Reflecting on what "freedom" means to different people and what it means to each of us.
 
 ### [Abundance](abundance.tex)
 Celebrating just how close worldwide freedom really is, including information from the book *Abundance* by Peter Diamandis and Steven Kotler.
