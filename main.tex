@@ -12,6 +12,8 @@
 %\setlength{\columnseprule}{1pt}
 %\def\columnseprulecolor{\color{blue}}
 
+\usepackage{needspace}
+
 
 \usepackage[]{qrcode}
 
@@ -135,7 +137,7 @@
 \newcommand{\newReading}{\faBook{}\ }
 
 % Choose which wine theme to use:
-\input{wine-themes/gratitude}
+\input{wine-themes/effective-altruism}
 %\input{wine-themes/last-year-summaries}
 
 
@@ -713,6 +715,7 @@ The Seder service is now concluded, its rites observed in full, its purposes rev
     \end{hebrewTranslation}
 \end{center}
 
+\Needspace{0.55\textheight} % keep the Hatkivah section all together on the same page, because otherwise the multicols environment looks terrible
 \subsection*{Hatikvah}
 As one last act together at our table tonight, we \inlineSederAction{stand} and sing the Jewish song of Hope.
 \begin{multicols}{2}
