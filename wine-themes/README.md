@@ -9,11 +9,7 @@ If you want to quickly scan the text of those readings (rather than looking at t
 In no particular order:
 
 ### [Four Freedoms](four-freedoms.tex)
-Celebrating just how close worldwide freedom really is, including information from the book *Abundance* by Peter Diamandis and Steven Kotler. 
-
-This is the shortest and simplest set of readings---a recommended starting point for Seders including very young children.
-
-
+Short and simple descriptions of four different types of freedom---a recommended starting point for Seders including very young children.
 
 ### [Gratitude](gratitude.tex)
 Learning strategies---adapted from David Cain's writings on Raptitude---to feel deep gratitude for the freedoms we enjoy, that we may better appreciate the importance of bringing freedom to the rest of the world.
