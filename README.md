@@ -12,7 +12,7 @@ On Shabbat we follow the same rituals each week, but reflect on a different Tora
 <details>
 <summary>Why is the transliteration different than in other Haggadot?</summary>
 
-This haggadot is designed to be extra friendly to people at the seder (guests or family members) who did not grow up Jewish. The transliterations are more easily readable for English speakers who have never encountered Hebrew before...apart from still using 'ch' for the chet/chof sound (I don't know what else to use for that...there's no equivalent in English).
+These Haggadot is designed to be extra friendly to people at the seder (guests or family members) who did not grow up Jewish. The transliterations are more easily readable for English speakers who have never encountered Hebrew before...apart from still using 'ch' for the chet/chof sound (I don't know what else to use for that...there's no equivalent in English).
 
 </details>
 
