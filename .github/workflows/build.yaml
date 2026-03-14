@@ -12,6 +12,7 @@ jobs:
           - abundance
           - gratitude
           - four-freedoms
+          - effective-altruism
           - what-does-freedom-mean-to-you
     steps:
       - name: Checkout code
