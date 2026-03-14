@@ -1,6 +1,20 @@
+# Why we made this
+
+<a id="permalink"></a>Passover is one of my favorite holidays, and I love hosting Seders. My wife was not raised Jewish, and we quickly realized that existing Haggadot had some substantial drawbacks for how we wanted to celebrate Passover.
+
+Some of the problems we ran into with existing Haggadot were:
+
+1. Haggadot labeled for "interfaith families" were often abridged and skipped meaningful prayers and rituals of the Seder.
+2. The way Hebrew is usually transliterated is not immediately intuitive to English speakers with no experience with Hebrew.
+3. There are a surprising number of cases in Jewish songs and prayers where we repeat a line, but there's no indication of that at all in the text (which is very jarring for someone trying to join in).
+4. Some Haggadot did meet some of these criteria, but were all substantially different from each other in the way they observed the rituals. We wanted to have consistency within the rituals, but not be reading the _exact_ text verbatim every single year.
+
+To solve this, we created our own Haggadah template that includes variations on the theme of freedom with readings at each of the four cups of wine.  So far we've 
+
+
 # How can I download the Haggadot?
 
-<a id="permalink"></a>Download the latest versions of the PDF files from the [GitHub Releases page](../../releases).
+Download the latest versions of the PDF files from the [GitHub Releases page](../../releases).
 
 # What are the different themes of the Haggadot?
 
