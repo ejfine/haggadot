@@ -11,6 +11,7 @@ jobs:
         wine_theme:
           - abundance
           - gratitude
+          - four-freedoms
     steps:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
