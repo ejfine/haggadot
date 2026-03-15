@@ -25,35 +25,35 @@ These Haggadot follow the same Seder structure, but each includes different read
 # FAQs
 
 <details>
-<summary>How long are these Haggadot?</summary>
+<summary><strong>How long are these Haggadot?</strong></summary>
 
 There's some variation in the length of the readings in the different themes, but typically the Seder takes around 30-45 minutes before the meal, and 20-30 minutes afterward (also dependent on how many Hallel songs you choose to sing).
 
 </details>
 
 <details>
-<summary>Why is the transliteration different than in other Haggadot?</summary>
+<summary><strong>Why is the transliteration different than in other Haggadot?</strong></summary>
 
 These Haggadot are designed to be extra friendly to people at the seder (guests or family members) who did not grow up Jewish. The transliterations are more easily readable for English speakers who have never encountered Hebrew before...apart from still using 'ch' for the chet/chof sound (I don't know what else to use for that...there's no equivalent in English).
 
 </details>
 
 <details>
-<summary>Why does it just say "Tell Passover Story" instead of having readings for the story?</summary>
+<summary><strong>Why does it just say "Tell Passover Story" instead of having readings for the story?</strong></summary>
 
 I've found it useful to be able to "read the room" during the Seder, especially regarding the current attention span of smaller children that may be present, and adjust the language and level of detail in the retelling of the story accordingly. If you want a standard reading for the story of passover, there are many sources you could get examples from to include in your Seder.
 
 </details>
 
 <details>
-<summary>Why is the Hallel a separate document from the rest of the Haggadah?</summary>
+<summary><strong>Why is the Hallel a separate document from the rest of the Haggadah?</strong></summary>
 
 The Hallel stays the same every year, while the themes for the cups of wine change. We've attempted to include it all as a single packet at past Seders if we want to just reuse the whole theme for a future Seder, but (at least at our Seders) the main content of the Haggadah tends to get lots of spills, tears, and other damage. This doesn't seem to happen with a separate set of pages for the Hallel. People also often have their own favorite Hallel songs that they want to include, so keeping it separate allows easy flexibility for that.
 
 </details>
 
 <details>
-<summary>What do the action symbols in the Haggadah mean?</summary>
+<summary><strong>What do the action symbols in the Haggadah mean?</strong></summary>
 
 Two symbols appear throughout the Haggadah to help guide participants:
 
@@ -63,7 +63,7 @@ Two symbols appear throughout the Haggadah to help guide participants:
 </details>
 
 <details>
-<summary>What is the 'egg cracking tournament' referenced during the festive meal?</summary>
+<summary><strong>What is the 'egg cracking tournament' referenced during the festive meal?</strong></summary>
 
 As Passover typically occurs very close to NCAA "March Madness", we've created our own tradition out of the hard-boiled egg on the Seder plate. Each participant in the Seder takes a hard-boiled egg and breaks off into pairs. On the count of three, they tap their eggs together until one cracks. The unbroken eggs then proceed to the next "round" until the Champion is crowned. Everyone else can eat their eggs while the Champion gets to be first in line for food.
 
@@ -72,7 +72,7 @@ As Passover typically occurs very close to NCAA "March Madness", we've created o
 </details>
 
 <details>
-<summary>Are there any restrictions on using this?</summary>
+<summary><strong>Are there any restrictions on using this?</strong></summary>
 
 None! All the Haggadot are completely free to distribute and use as you wish.
 
