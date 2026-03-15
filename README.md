@@ -82,3 +82,8 @@ If you want to share the overall project with people, here's some example text:
 
 </details>
 
+# Development
+
+[![Actions status](https://github.com/ejfine/haggadot/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/ejfine/haggadot/actions)
+[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/ejfine/haggadot)
+[![OpenIssues](http://isitmaintained.com/badge/open/ejfine/haggadot.svg)](http://isitmaintained.com/project/ejfine/haggadot)
