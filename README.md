@@ -10,7 +10,7 @@ Some of the problems we ran into were:
 3. There are a surprising number of cases in Jewish songs and prayers where we repeat a line, but there's no indication of that at all in the text (which is very jarring for someone trying to join in).
 4. Some Haggadot did meet some of these criteria, but were all substantially different from each other in the way they observed the rituals. We wanted to have consistency within the rituals, but not be reading the _exact_ text verbatim every single year.
 
-To solve this, we created our own Haggadah template that includes variations on the theme of freedom with readings at each of the four cups of wine.  So far, we've written five different versions.
+To solve this, we created our own Haggadah template that includes variations on the theme of freedom with readings at each of the four cups of wine.  So far, we've written five different versions. If you notice any errors or would like to contribute additional themes, please see the [Development](#development) section for more details.
 
 
 # How can I download the Haggadot?
