@@ -15,7 +15,7 @@ To solve this, we created our own Haggadah template that includes variations on 
 
 # How can I download the Haggadot?
 
-Download the latest versions of the PDF files from the [GitHub Releases page](../../releases).
+Download the latest versions of the PDF files from the [Releases page](../../releases).
 
 # What are the different themes of the Haggadot?
 
