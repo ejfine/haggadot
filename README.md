@@ -15,7 +15,7 @@ To solve this, we created our own Haggadah template that includes variations on 
 
 # How can I download the Haggadot?
 
-Download the latest versions of the PDF files from the [GitHub Releases page](../../releases).
+Download the latest versions of the PDF files from the [Releases page](../../releases).
 
 # What are the different themes of the Haggadot?
 
@@ -78,7 +78,7 @@ None! All the Haggadot are completely free to distribute and use as you wish.
 
 If you want to share the overall project with people, here's some example text:
 
-> We struggled to find Haggadot which were accessible to people who were not raised Jewish, a complete version of the Jewish experience, and struck a balance of consistent traditions year-to-year while not being the exact same text. Over the years we wrote our own Haggadot to solve this. We finally collated them all together [here](https://github.com/ejfine/haggadot?tab=readme-ov-file#permalink) if you're interested.
+> My wife and I had a hard time finding Haggadot that felt accessible to people who were not raised Jewish, still offered a full seder experience, and struck a balance between consistent traditions year to year while not using exactly the same text every time. So we started writing our own. We finally collated them all together [here](https://github.com/ejfine/haggadot?tab=readme-ov-file#permalink) if you're interested.
 
 </details>
 
