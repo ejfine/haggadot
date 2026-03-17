@@ -3,9 +3,18 @@
 
 %% 'includefoot' makes sure that the page numbers are in the printable area: https://tex.stackexchange.com/questions/49852/page-numbers-and-margins %%%
 \usepackage[papersize={8.5in,11in}, margin=0.5in, includefoot]{geometry}
-%\usepackage[papersize={5.5in,8.5in}, margin=0.5in, includefoot]{geometry}
 
 \usepackage{graphicx}
+
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+\newcommand{\haggadahVersion}{v1.0.0} % Note: there's no reason to keep this up to date.  The Release action automatically updateds it before compiling the PDFs.
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\textcolor{gray}{\haggadahVersion}}
+\renewcommand{\headrulewidth}{0pt}
 
 \usepackage{multicol}
 % https://www.overleaf.com/learn/latex/Multiple_columns#Inserting_vertical_rulers

@@ -3,9 +3,18 @@
 
 %% 'includefoot' makes sure that the page numbers are in the printable area: https://tex.stackexchange.com/questions/49852/page-numbers-and-margins %%%
 \usepackage[papersize={8.5in,11in}, margin=0.5in, includefoot]{geometry}
-%\usepackage[papersize={5.5in,8.5in}, margin=0.5in, includefoot]{geometry}
 
 \usepackage{graphicx}
+
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+\newcommand{\haggadahVersion}{v1.0.0} % Note: there's no reason to keep this up to date.  The Release action automatically updateds it before compiling the PDFs.
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\textcolor{gray}{\haggadahVersion}}
+\renewcommand{\headrulewidth}{0pt}
 
 \usepackage{multicol}
 % https://www.overleaf.com/learn/latex/Multiple_columns#Inserting_vertical_rulers
@@ -623,7 +632,7 @@ In the tradition of Rabbi Hillel, we follow the custom of making a matzah and ma
 \sederAction{Drink the third cup of wine.}
 
 \subsection*{Elijah's Cup}
-\newReading The prophet Elijah symbolizes the dreams of the Jewish people. Elijah challenged the injustice of the powerful and overthrew worship of idols. He healed the sick and protected the helpless. %At the end of his days, Elijah was carried off to heaven in a fiery chariot. 
+\newReading The prophet Elijah symbolizes the dreams of the Jewish people. Elijah challenged the injustice of the powerful and overthrew worship of idols. He healed the sick and protected the helpless.
 The prophet Malachi promised that Elijah will return one day to announce the coming of the Messiah, when all the world will celebrate universal freedom. Legend relates that Elijah enters the world each day in disguise, waiting for someone to do him a simple act of kindness. That one, caring act will trigger the redemption of the world. Where is Elijah? He could be anywhere\textemdash{}with a homeless family living on the street; in the cancer ward of your local hospital; in a dilapidated inner-city kindergarten classroom. %He could even be the person sitting beside you right now.
 
 \sederAction{Fill Elijah's Cup}
