@@ -12,6 +12,8 @@
 %\setlength{\columnseprule}{1pt}
 %\def\columnseprulecolor{\color{blue}}
 
+\usepackage{needspace}
+
 
 \usepackage[]{qrcode}
 
@@ -61,7 +63,7 @@
     }
 
 \newenvironment{hebrewTransliteration}{}{\par}
-\newenvironment{unreadHebrewTranslation}{\itshape}{\par}
+\newenvironment{unreadHebrewTranslation}{\itshape(\hspace{-0.2em}}{\hspace{-0.2em})\par}
 \newenvironment{hebrewTranslation}{}{\par}
 
 \newcommand{\god}{God}
@@ -76,10 +78,10 @@
 \newcommand{\hebrewVowelLineL}{a}
 
 \newcommand{\transliterateAdonai}{Ah-doe-nai}
-\newcommand{\transliterateEloheinu}{Eh-lo-hey-nu}
+\newcommand{\transliterateEloheinu}{Eh-lo-hey-new}
 
 \newcommand{\baruchAdonai}{b*Arw*k: 'at*Ah y:yA}
-\newcommand{\transliterateBaruchAdonai}{Bar-ooch a-ta {\transliterateAdonai}}
+\newcommand{\transliterateBaruchAdonai}{Ba-rooch ah-ta {\transliterateAdonai}}
 \newcommand{\translateBaruchAdonai}{Blessed are You, Lord our \god}
 
 
@@ -88,11 +90,11 @@
 \newcommand{\translateBaruchHaolam}{{\translateBaruchAdonai}, Ruler of the universe}
 
 \newcommand{\baruchHagafen}{{\baruchHaolam} b*Or:' p*:riy hag*{\hebrewVowelTL}pEn}
-\newcommand{\transliterateBaruchHagafen}{{\transliterateBaruchHaolam} bo-rey pe-ri ha-ga-fen.}
+\newcommand{\transliterateBaruchHagafen}{{\transliterateBaruchHaolam} bo-rey p'ree ha-ga-fen.}
 \newcommand{\translateBaruchHagafen}{{\translateBaruchHaolam}, Creator of the fruit of the vine.}
 
 \newcommand{\baruchVtzivanu}{{\baruchHaolam} 'a:+s:r qid*:+sAnU b*:mi.s:w{\hebrewVowelOh}tAyw w:.siw*AnU}
-\newcommand{\transliterateBaruchVtzivanu}{{\transliterateBaruchHaolam} ah-share keed-shanu b'meetz-voh-tav v'tzee-vah-nu}
+\newcommand{\transliterateBaruchVtzivanu}{{\transliterateBaruchHaolam} ah-share keed-sha-new b'meetz-voh-tav v'tzee-vah-new}
 \newcommand{\translateBaruchVtzivanu}{{\translateBaruchHaolam}, who has taught us the way of holiness through commandments, and commands us}
 
 \newcommand{\standardWineBlessing}{
@@ -115,8 +117,6 @@
 \newcommand{\sederAction}[1]{\inlineSederAction{#1}\par}
 
 \newcommand{\sederStep}[2]{
-    %\begin{minipage}[t]{\textwidth}
-        %\begin{table}[]
             \begin{tabular}{ll}
                 \textbf{#1} & 
                     \begin{minipage}[t]{0.35\textwidth}
@@ -124,8 +124,6 @@
                     \end{minipage}
             \end{tabular}
             \\[0.5em]
-        %\end{table}
-    %\end{minipage}
 }
 
 \newcommand{\sederSection}[2]{
