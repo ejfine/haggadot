@@ -7,6 +7,16 @@
 
 \usepackage{graphicx}
 
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+\newcommand{\haggadahVersion}{v1.0.0}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\textcolor{gray}{\haggadahVersion}}
+\renewcommand{\headrulewidth}{0pt}
+
 \usepackage{multicol}
 % https://www.overleaf.com/learn/latex/Multiple_columns#Inserting_vertical_rulers
 %\setlength{\columnseprule}{1pt}
