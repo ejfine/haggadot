@@ -11,6 +11,15 @@ env:
   PRE_COMMIT_HOME: ${{ github.workspace }}/.precommit_cache
 
 jobs:
+  lint:
+    name: Pre-commit
+    uses: ./.github/workflows/pre-commit.yaml
+    permissions:
+      id-token: write
+      contents: write # needed for mutex, and updating dependabot branches
+    with:
+      python-version: notUsing
+
   build:
     uses: ./.github/workflows/build.yaml
 
@@ -18,6 +27,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 2
     needs:
+      - lint
       - build
     if: always()
     permissions: {}
@@ -26,7 +36,8 @@ jobs:
         run: |
           success_pattern="^(skipped|success)$" # these are the possibilities: https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#needs-context
 
-          if [[ ! "${{ needs.build.result }}" =~ $success_pattern ]]; then
+          if [[ ! "${{ needs.lint.result }}" =~ $success_pattern ]] ||
+            [[ ! "${{ needs.build.result }}" =~ $success_pattern ]]; then
             echo "❌ One or more jobs did not finish with skipped or success"
             exit 1
           fi

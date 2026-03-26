@@ -57,7 +57,7 @@ The Hallel stays the same every year, while the themes for the cups of wine chan
 
 Two symbols appear throughout the Haggadah to help guide participants:
 
-- 📖 **(book icon)** — Marks a **reading passage**. The leader (or someone designated) reads this text aloud to the group.
+- 📖 **(book icon)** — Marks a **reading passage**. Participants in the Seder can take turns reading these passages (typically by going around the table). The leader of the Seder will typically read any English readings not marked with this symbol.
 - 👉 **(pointing hand icon)** — Marks a **seder action** — something that participants should physically do (e.g., "Fill cup with wine", "Wash hands", "Eat the karpas"), and not read aloud. These are typically underlined in the printed document as well.
 
 </details>
