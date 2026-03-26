@@ -48,7 +48,7 @@ def main():
         pwsh = shutil.which("pwsh") or shutil.which("powershell")
         if not pwsh:
             raise FileNotFoundError("Neither 'pwsh' nor 'powershell' found on PATH")
-    if not args.no_python:
+    if not args.no_python or True: # TODO: port a way to the copier template to still install pre-commit even if no python other stuff is needed
         if is_windows:
             uv_env.update({"PATH": rf"{GITHUB_WINDOWS_RUNNER_BIN_PATH};{uv_env['PATH']}"})
             # invoke installer in a pwsh process
