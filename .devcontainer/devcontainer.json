@@ -36,10 +36,8 @@
         "ms-python.python@2026.2.2026021801",
         "ms-python.vscode-pylance@2026.1.1",
         "ms-vscode-remote.remote-containers@0.414.0",
-        "charliermarsh.ruff@2026.36.0",
 
         // Misc file formats
-        "bierner.markdown-mermaid@1.29.0",
         "samuelcolvin.jinjahtml@0.20.0",
         "tamasfe.even-better-toml@0.19.2",
         "emilast.LogFileHighlighter@3.3.3",
@@ -51,11 +49,6 @@
         "extensions.autoCheckUpdates": false,
         "livePreview.portNumber": 3025, // arbitrary not to conflict with default 3000 Nuxt port number
         "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
-        "[python]": {
-          "editor.formatOnSave": true,
-          "editor.defaultFormatter": "charliermarsh.ruff"
-        },
-        "ruff.nativeServer": "on"
       }
     }
   },
