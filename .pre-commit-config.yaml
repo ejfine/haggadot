@@ -9,16 +9,6 @@ repos:
       - id: git-dirty
 
   # Reformatting (should generally come before any file format or other checks, because reformatting can change things)
-  # - repo: https://github.com/crate-ci/typos
-  #   rev: e1f6f6eaedd8587fa3c76ec20e7cbaa8f7132b2d  # frozen: v1
-  #   hooks:
-  #     - id: typos
-  #       exclude: |
-  #         (?x)^(
-  #             .*\.min.js|
-  #             .*\.min.css|
-  #             .*\.umd.js|
-  #         )$
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
     hooks:
