@@ -18,7 +18,7 @@ jobs:
       id-token: write
       contents: write # needed for mutex, and updating dependabot branches
     with:
-      python-version: 3.13.9
+      python-version: notUsing
 
   build:
     uses: ./.github/workflows/build.yaml
