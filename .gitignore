@@ -1,3 +1,11 @@
+# Claude
+.claude/settings.local.json
+## we manage the settings JSON by merging the JSONC files in the settings/ directory
+.claude/settings.json
+# Dolt database files (used by beads for Claude)
+.dolt/
+*.db
+
 # LaTex generated files
 build/
 *-eps-converted-to.pdf

@@ -16,3 +16,5 @@ npm --prefix "$repo_root/.claude" ci
 
 # Install beads for use in Claude planning
 npm install -g @beads/bd@0.57.0 # no specific reason for this version, just pinning for best practice
+
+pre-commit install --install-hooks
