@@ -15,7 +15,8 @@ jobs:
     name: Pre-commit
     uses: ./.github/workflows/pre-commit.yaml
     permissions:
-      contents: write # needed for mutex
+      id-token: write
+      contents: write # needed for mutex, and updating dependabot branches
     with:
       python-version: 3.13.9
 
