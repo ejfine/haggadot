@@ -42,25 +42,25 @@ jobs:
           name: haggadah-${{ matrix.wine_theme }}
           path: haggadah-${{ matrix.wine_theme }}.pdf
 
-  compile-hallel:
+  compile-halail:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
       - name: Set version
         if: inputs.version != ''
-        run: sed -i 's|\\newcommand{\\haggadahVersion}{[^}]*}|\\newcommand{\\haggadahVersion}{${{ inputs.version }}}|' hallel/main.tex
+        run: sed -i 's|\\newcommand{\\haggadahVersion}{[^}]*}|\\newcommand{\\haggadahVersion}{${{ inputs.version }}}|' halail/main.tex
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@4.0.0
         with:
           root_file: |
-            hallel/main.tex
+            halail/main.tex
           work_in_root_file_dir: true
           docker_image: texlive/texlive@sha256:62927d994f09aea455c8ea9da034af14764f9e2276a616b413545e7cec69c06b
       - name: Rename PDF
-        run: mv hallel/main.pdf hallel.pdf
+        run: mv halail/main.pdf halail.pdf
       - name: Upload PDF file
         uses: actions/upload-artifact@v7.0.0
         with:
-          name: hallel
-          path: hallel.pdf
+          name: halail
+          path: halail.pdf
