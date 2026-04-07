@@ -1,7 +1,7 @@
 # Project Structure
 
 - This is a LaTeX project for creating Passover Haggadot. The `main.tex` file is at the project root. A Haggadah can be generated for a specific theme by selecting one of the files in the `wine-themes` folder as an input.
-- There is a separate subjecting in the `hallel` subfolder.
+- There is a separate project in the `halail` subfolder.
 
 # Agent Implementations & Configurations
 
