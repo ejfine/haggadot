@@ -121,22 +121,52 @@
 }
 
 %%%%%%
-
+\newcommand{\hebrewInline}[1]{\mbox{\cjRL{\large #1}}}
+\newcommand{\stepKadaeshEn}{Kadaesh}
+\newcommand{\stepKadaeshHe}{qade+s}
+\newcommand{\stepOorchahtzEn}{Oorchahtz}
+\newcommand{\stepOorchahtzHe}{Ur:.ha.s}
+\newcommand{\stepKarpahsEn}{Karpahs}
+\newcommand{\stepKarpahsHe}{k*ar:p*as}
+\newcommand{\stepYachatzEn}{Yachatz}
+\newcommand{\stepYachatzHe}{ya.ha.s}
+\newcommand{\stepMaggeedEn}{Maggeed}
+\newcommand{\stepMaggeedHe}{mag*iyd}
+\newcommand{\stepRachtzahEn}{Rachtzah}
+\newcommand{\stepRachtzahHe}{rA.ha:.sAh}
+\newcommand{\stepMoatzeeEn}{Moatzee}
+\newcommand{\stepMoatzeeHe}{mO.siy'}
+\newcommand{\stepMatzahEn}{Matzah}
+\newcommand{\stepMatzahHe}{ma.s*Ah}
+\newcommand{\stepMaroarEn}{Ma-roar}
+\newcommand{\stepMaroarHe}{mArOr}
+\newcommand{\stepKoraechEn}{Kor-aech}
+\newcommand{\stepKoraechHe}{k*Orek:}
+\newcommand{\stepShoolchanOraechEn}{Shoolchan Or-aech}
+\newcommand{\stepShoolchanOraechHe}{+sul:.hAn `Orek:}
+\newcommand{\stepTzafoonEn}{Tzafoon}
+\newcommand{\stepTzafoonHe}{.sApUn}
+\newcommand{\stepBaraechEn}{Bar-aech}
+\newcommand{\stepBaraechHe}{b*Arek:}
+\newcommand{\stepHalailEn}{Halail}
+\newcommand{\stepHalailHe}{hal*el}
+\newcommand{\stepNeartzahEn}{Near-tzah}
+\newcommand{\stepNeartzahHe}{nir:.sAh}
 \newcommand{\inlineSederAction}[1]{\faHandORight{}~\underline{#1}}
 \newcommand{\sederAction}[1]{\inlineSederAction{#1}\par}
 
-\newcommand{\sederStep}[2]{
+\newcommand{\sederStep}[3]{
             \begin{tabular}{ll}
-                \textbf{#1} &
+                \begin{tabular}[t]{@{}l@{}}\textbf{\hebrewInline{#2}}\\\textbf{\textit{#1}}\end{tabular} &
                     \begin{minipage}[t]{0.35\textwidth}
-                        #2
+                        #3
                     \end{minipage}
             \end{tabular}
-            \\[0.5em]
+            \\[0.8em]
 }
 
 \newcommand{\sederSection}[2]{
-    \section*{#1 \Huge\cjRL{#2}}
+    \section*{{\Huge \cjRL{#2}} \textit{#1}}
 }
 
 \newcommand{\newReading}{\faBook{}\ }
@@ -166,24 +196,24 @@ Tonight we celebrate their freedom and ours. May this Seder kindle in us the zea
 
 \newReading The word \textit{Seder} means ``order'', indicating that all the commandments and rituals of this evening are to be performed in a specific order.
 
-There were fifteen steps leading to the Temple, corresponding to the fifteen Sheer Ha-ma-ah-low-s (songs of Ascent) found in Psalms. Similarly, the Seder follows a fifteen stage process of ascent.
+There were fifteen steps leading to the Temple, corresponding to the fifteen Psalms in the \hebrewInline{+siyr ham*a`a:lOt} \textit{sheer ha-ma-ah-lote} (Song of Ascents). Similarly, the Seder follows a fifteen-stage process of ascent.
 
 \begin{multicols}{2}
-    \sederStep{Kadaesh}{recitation of Key-doosh}
-    \sederStep{Urchahtz}{washing the hands}
-    \sederStep{Karpahs}{eating a vegetable dipped in saltwater}
-    \sederStep{Yachatz}{breaking of the middle matzah}
-    \sederStep{Maggeed}{recitation of the story of Passover}
-    \sederStep{Rachtzah}{washing of the hands a second time}
-    \sederStep{Moatzee}{recitation of the blessing ha-moatzee}
-    \sederStep{Matzah}{recitation of the blessing over matzah, eating the matzah}
-	\sederStep{Ma-roar}{eating the bitter herbs}
-    \sederStep{Kor-aech}{eating a sandwich of matzah and bitter herbs}
-    \sederStep{Shoolchan Or-aech}{eating the festive meal}
-    \sederStep{Tzafoon}{eating the afikomen}
-    \sederStep{Bar-aech}{recitation of grace}
-    \sederStep{Halail}{singing songs of praise}
-    \sederStep{Near-tzah}{our prayer that \god{} accepts our service}
+    \sederStep{\stepKadaeshEn}{\stepKadaeshHe}{recitation of Key-doosh}
+    \sederStep{\stepOorchahtzEn}{\stepOorchahtzHe}{washing the hands}
+    \sederStep{\stepKarpahsEn}{\stepKarpahsHe}{eating a vegetable dipped in saltwater}
+    \sederStep{\stepYachatzEn}{\stepYachatzHe}{breaking of the middle matzah}
+    \sederStep{\stepMaggeedEn}{\stepMaggeedHe}{recitation of the story of Passover}
+    \sederStep{\stepRachtzahEn}{\stepRachtzahHe}{washing of the hands a second time}
+    \sederStep{\stepMoatzeeEn}{\stepMoatzeeHe}{recitation of the blessing ha-moatzee}
+    \sederStep{\stepMatzahEn}{\stepMatzahHe}{recitation of the blessing over matzah, eating the matzah}
+	\sederStep{\stepMaroarEn}{\stepMaroarHe}{eating the bitter herbs}
+    \sederStep{\stepKoraechEn}{\stepKoraechHe}{eating a sandwich of matzah and bitter herbs}
+    \sederStep{\stepShoolchanOraechEn}{\stepShoolchanOraechHe}{eating the festive meal}
+    \sederStep{\stepTzafoonEn}{\stepTzafoonHe}{eating the afikomen}
+    \sederStep{\stepBaraechEn}{\stepBaraechHe}{recitation of grace}
+    \sederStep{\stepHalailEn}{\stepHalailHe}{singing songs of praise}
+    \sederStep{\stepNeartzahEn}{\stepNeartzahHe}{our prayer that \god{} accepts our service}
 
 \end{multicols}
 
@@ -202,7 +232,7 @@ There were fifteen steps leading to the Temple, corresponding to the fifteen She
         {\translateBaruchHaolam}, who has kept us alive, sustained us, and enabled us to celebrate this joyous occasion.
     \end{unreadHebrewTranslation}
 \end{minipage}
-\sederSection{Kadaesh}{qade+s}
+\sederSection{\stepKadaeshEn}{\stepKadaeshHe}
 \newReading Wine gladdens the heart. The Torah tells us four times to recount the story of our redemption from slavery and we will drink wine four times during the course of this Seder while reclining; twice before the meal and twice after the meal. Wine is a symbol of joy and happiness and we thank \god{} that we are able to gather together again with friends to observe this Festival just as our ancestors have done for centuries.
 
 Why four cups? Some say the cups represent our matriarchs\textemdash{}Sarah, Rebecca, Rachel, and Leah\textemdash{}whose virtue caused \god{} to liberate us from slavery. Another interpretation is that the cups represent the Kabbalists' four worlds (physicality, emotions, thought, and essence). In our Seder, these four cups give us the chance to understand four aspects of different types of freedom each year. %{\wineSummaryLastYear}
@@ -228,7 +258,7 @@ Why four cups? Some say the cups represent our matriarchs\textemdash{}Sarah, Reb
     \sederAction{Drink the first cup of wine.}
 \end{minipage}
 
-\sederSection{Urchahtz}{Ur:.ha.s}
+\sederSection{\stepOorchahtzEn}{\stepOorchahtzHe}
 \newReading Water is refreshing, cleansing, and clear, so it's easy to understand
 why so many cultures and religions use water for symbolic purification.
 We will wash our hands twice during our Seder: now, with no blessing, to get us ready for the rituals to come;
@@ -238,7 +268,7 @@ As we wash, let us remember to be servants of one another, yet know that we are 
 
 \sederAction{Each person takes the water jug and washes the hands of the person next to them.}
 
-\sederSection{Karpahs}{k*ar:p*as}
+\sederSection{\stepKarpahsEn}{\stepKarpahsHe}
 \sederAction{Pick up a piece of karpahs.}
 \newReading Pesach is a springtime holiday. The karpahs reminds us of springtime and hope. Sometimes we despair of the evil in our world. Pesach calls us to hope again.
 \par Now we \inlineSederAction{dip the karpahs in salt water}. We remember the tears our people cried in Egypt when they were slaves. May we never be so comfortable that we become complacent, forgetting the pain of others.
@@ -258,7 +288,7 @@ As we wash, let us remember to be servants of one another, yet know that we are 
     \sederAction{Eat the karpahs.}
 \end{minipage}
 
-\sederSection{Yachatz}{ya.ha.s}
+\sederSection{\stepYachatzEn}{\stepYachatzHe}
 We are about to take the middle matzah and divide it in half.
 This matzah which we break and set aside is a symbol of our unity with Jews throughout the world.
 We will not conclude our Seder until the missing piece (the Afikomen) is found and reunited.
@@ -267,7 +297,7 @@ This is a reminder of the indestructible link which infuses us as a world family
 \sederAction{Break middle matzah and hide the Afikomen.}
 
 \begin{minipage}[t]{\textwidth}
-    \sederSection{Maggeed}{mag*iyd}
+    \sederSection{\stepMaggeedEn}{\stepMaggeedHe}
     \sederAction{Raise the plate with the matzot and say:}
     \begin{hebrewPrayer}
         hA' la.h:mA' `an:yA' d*iy 'a:kAlU 'a:bAhAtAnA' b*:'ar:`A' d*:mi.s:rayim\textrm{.} k*Al d*ik:piyn yeytey w:yekul\textrm{.} k*Al d*i.s:riyk: yeytey w:yip:sa.h\textrm{.} hA+sat*A' hAbA'\textrm{.} l:+sAnAh hab*A'Ah b*:'ar:`A' d*:yi,s:rA'el\textrm{.} hA+sat*A' `ab:dey\textrm{.} l:+sAnAh hab*A'Ah b*:ney .hOriyn\textrm{.}
@@ -347,16 +377,16 @@ and the dream of redemption can become a reality.
 When we recall each of these plagues, we remove a drop of wine\textemdash{}our symbol of joy\textemdash{}from our cups and blot it on our plates, because our joy is less when we remember the sufferings of the Egyptians. Together, let us recall the Ten Plagues against Egypt:
 \begin{multicols}{2}
     \begin{enumerate}
-        \item \cjRL{\Large d*Am} \textit{Dahm} Blood
-        \item \cjRL{\Large .s:par:de`a} \textit{Tzeh-far-day-ah} Frogs
-        \item \cjRL{\Large k*iniym} \textit{Key-neem} Lice
-        \item \cjRL{\Large `ArOb} \textit{Ah-rove} Insects
-        \item \cjRL{\Large d*EbEr} \textit{Deh-vehr} Cattle Disease
-        \item \cjRL{\Large +s:.hiyn} \textit{Sh'ch'een} Boils
-        \item \cjRL{\Large b*ArAd} \textit{Ba-rod} Hail
-        \item \cjRL{\Large 'ar:b*Eh} \textit{Ar-beh} Locusts
-        \item \cjRL{\Large .h+sEk:} \textit{Ch'oh-sheh'ch} Darkness
-        \item \cjRL{\Large mab*Ot b*:kOrOt} \textit{Mah-boat b'ch-oh-rote} Slaying of the First Born
+        \item \hebrewInline{d*Am} \textit{Dahm} Blood
+        \item \hebrewInline{.s:par:de`a} \textit{Tzeh-far-day-ah} Frogs
+        \item \hebrewInline{k*iniym} \textit{Key-neem} Lice
+        \item \hebrewInline{`ArOb} \textit{Ah-rove} Insects
+        \item \hebrewInline{d*EbEr} \textit{Deh-vehr} Cattle Disease
+        \item \hebrewInline{+s:.hiyn} \textit{Sh'ch'een} Boils
+        \item \hebrewInline{b*ArAd} \textit{Ba-rod} Hail
+        \item \hebrewInline{'ar:b*Eh} \textit{Ar-beh} Locusts
+        \item \hebrewInline{.h+sEk:} \textit{Ch'oh-sheh'ch} Darkness
+        \item \hebrewInline{mab*Ot b*:kOrOt} \textit{Mah-boat b'ch-oh-rote} Slaying of the First Born
     \end{enumerate}
 \end{multicols}
 
@@ -449,7 +479,7 @@ Also with this second cup, we are especially encouraged to celebrate our freedom
 {\standardWineBlessing}
 \sederAction{Drink the second cup of wine while leaning to the left.}
 
-\sederSection{Rachtzah}{rA.ha:.sAh}
+\sederSection{\stepRachtzahEn}{\stepRachtzahHe}
 \sederAction{Wash hands while reciting blessing.}
 
 \begin{hebrewPrayer}
@@ -464,7 +494,7 @@ Also with this second cup, we are especially encouraged to celebrate our freedom
     {\translateBaruchVtzivanu} to wash our hands.
 \end{unreadHebrewTranslation}
 
-\sederSection{Moatzee}{mO.siy'}
+\sederSection{\stepMoatzeeEn}{\stepMoatzeeHe}
 \sederAction{Raise all three matzot.}
 
 \begin{hebrewPrayer}
@@ -480,7 +510,7 @@ Also with this second cup, we are especially encouraged to celebrate our freedom
 \end{unreadHebrewTranslation}
 
 
-\sederSection{Matzah}{ma.s*Ah}
+\sederSection{\stepMatzahEn}{\stepMatzahHe}
 \sederAction{Put down the bottom matzah.}
 
 \begin{hebrewPrayer}
@@ -497,7 +527,7 @@ Also with this second cup, we are especially encouraged to celebrate our freedom
 
 \sederAction{Break the top and middle matzot, distribute, and eat.}
 
-\sederSection{Ma-roar}{mArOr}
+\sederSection{\stepMaroarEn}{\stepMaroarHe}
 \begin{hebrewPrayer}
     {\baruchVtzivanu} `al 'a:kiylat mArOr
 \end{hebrewPrayer}
@@ -515,20 +545,20 @@ Also with this second cup, we are especially encouraged to celebrate our freedom
 
 
 
-\sederSection{Kor-aech}{k*Orek:}
+\sederSection{\stepKoraechEn}{\stepKoraechHe}
 
 In the tradition of Rabbi Hillel, we follow the custom of making a matzah and maror sandwich. We eat the maror of slavery together with the matzah of freedom. In times of slavery there is always the hope of freedom. In times of freedom, there is always the memory of slavery.
 
 \sederAction{Take the bottom matzah and place maror and charoset in between and eat.}
 
-\sederSection{Shoolchan Or-aech}{+sul:.hAn `Orek:}
+\sederSection{\stepShoolchanOraechEn}{\stepShoolchanOraechHe}
 
 \sederAction{March-Madness-Style egg cracking tournament! Winner gets food first!}
 
-\sederSection{Tzafoon}{.sApUn}
+\sederSection{\stepTzafoonEn}{\stepTzafoonHe}
 \sederAction{Find and eat the Afikomen.}
 
-\sederSection{Bar-aech}{b*Arek:}
+\sederSection{\stepBaraechEn}{\stepBaraechHe}
 \sederAction{Refill cup of wine.}
 
 \textbf{Leader:}
@@ -661,7 +691,7 @@ Elijah's cup represents the promise of messianic freedom. It symbolizes a time w
 
 
 
-\sederSection{Halail}{hal*el}
+\sederSection{\stepHalailEn}{\stepHalailHe}
 
 \subsection*{Ah-deer Hoo}
 
@@ -687,7 +717,7 @@ Elijah's cup represents the promise of messianic freedom. It symbolizes a time w
 \sederAction{Take turns picking your favorite song for us to sing}
 
 %\pagebreak
-\sederSection{Near-tzah}{nir:.sAh}
+\sederSection{\stepNeartzahEn}{\stepNeartzahHe}
 
 
 The Seder service is now concluded, its rites observed in full, its purposes revealed. As we gathered together to celebrate this Seder tonight, may we be worthy to celebrate again in freedom next year. And may {\god}, who redeemed our ancestors from slavery and degradation, redeem all who are enslaved and bring freedom and dignity to our entire world. Together, let us say:
