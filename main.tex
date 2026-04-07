@@ -121,15 +121,15 @@
 }
 
 %%%%%%
-
+\newcommand{\hebrewText}[1]{\cjRL{\Large #1}}
 \newcommand{\inlineSederAction}[1]{\faHandORight{}~\underline{#1}}
 \newcommand{\sederAction}[1]{\inlineSederAction{#1}\par}
 
-\newcommand{\sederStep}[2]{
+\newcommand{\sederStep}[3]{
             \begin{tabular}{ll}
-                \textbf{#1} &
+                \begin{tabular}[t]{@{}l@{}}\textbf{\hebrewText{#2}}\\\textit{#1}\end{tabular} &
                     \begin{minipage}[t]{0.35\textwidth}
-                        #2
+                        #3
                     \end{minipage}
             \end{tabular}
             \\[0.5em]
@@ -169,21 +169,21 @@ Tonight we celebrate their freedom and ours. May this Seder kindle in us the zea
 There were fifteen steps leading to the Temple, corresponding to the fifteen Sheer Ha-ma-ah-low-s (songs of Ascent) found in Psalms. Similarly, the Seder follows a fifteen stage process of ascent.
 
 \begin{multicols}{2}
-    \sederStep{Kadaesh}{recitation of Key-doosh}
-    \sederStep{Urchahtz}{washing the hands}
-    \sederStep{Karpahs}{eating a vegetable dipped in saltwater}
-    \sederStep{Yachatz}{breaking of the middle matzah}
-    \sederStep{Maggeed}{recitation of the story of Passover}
-    \sederStep{Rachtzah}{washing of the hands a second time}
-    \sederStep{Moatzee}{recitation of the blessing ha-moatzee}
-    \sederStep{Matzah}{recitation of the blessing over matzah, eating the matzah}
-	\sederStep{Ma-roar}{eating the bitter herbs}
-    \sederStep{Kor-aech}{eating a sandwich of matzah and bitter herbs}
-    \sederStep{Shoolchan Or-aech}{eating the festive meal}
-    \sederStep{Tzafoon}{eating the afikomen}
-    \sederStep{Bar-aech}{recitation of grace}
-    \sederStep{Halail}{singing songs of praise}
-    \sederStep{Near-tzah}{our prayer that \god{} accepts our service}
+    \sederStep{Kadaesh}{qade+s}{recitation of Key-doosh}
+    \sederStep{Oorchahtz}{Ur:.ha.s}{washing the hands}
+    \sederStep{Karpahs}{k*ar:p*as}{eating a vegetable dipped in saltwater}
+    \sederStep{Yachatz}{ya.ha.s}{breaking of the middle matzah}
+    \sederStep{Maggeed}{mag*iyd}{recitation of the story of Passover}
+    \sederStep{Rachtzah}{rA.ha:.sAh}{washing of the hands a second time}
+    \sederStep{Moatzee}{mO.siy'}{recitation of the blessing ha-moatzee}
+    \sederStep{Matzah}{ma.s*Ah}{recitation of the blessing over matzah, eating the matzah}
+	\sederStep{Ma-roar}{mArOr}{eating the bitter herbs}
+    \sederStep{Kor-aech}{k*Orek:}{eating a sandwich of matzah and bitter herbs}
+    \sederStep{Shoolchan Or-aech}{+sul:.hAn `Orek:}{eating the festive meal}
+    \sederStep{Tzafoon}{.sApUn}{eating the afikomen}
+    \sederStep{Bar-aech}{b*Arek:}{recitation of grace}
+    \sederStep{Halail}{hal*el}{singing songs of praise}
+    \sederStep{Near-tzah}{nir:.sAh}{our prayer that \god{} accepts our service}
 
 \end{multicols}
 
@@ -228,7 +228,7 @@ Why four cups? Some say the cups represent our matriarchs\textemdash{}Sarah, Reb
     \sederAction{Drink the first cup of wine.}
 \end{minipage}
 
-\sederSection{Urchahtz}{Ur:.ha.s}
+\sederSection{Oorchahtz}{Ur:.ha.s}
 \newReading Water is refreshing, cleansing, and clear, so it's easy to understand
 why so many cultures and religions use water for symbolic purification.
 We will wash our hands twice during our Seder: now, with no blessing, to get us ready for the rituals to come;
@@ -347,16 +347,16 @@ and the dream of redemption can become a reality.
 When we recall each of these plagues, we remove a drop of wine\textemdash{}our symbol of joy\textemdash{}from our cups and blot it on our plates, because our joy is less when we remember the sufferings of the Egyptians. Together, let us recall the Ten Plagues against Egypt:
 \begin{multicols}{2}
     \begin{enumerate}
-        \item \cjRL{\Large d*Am} \textit{Dahm} Blood
-        \item \cjRL{\Large .s:par:de`a} \textit{Tzeh-far-day-ah} Frogs
-        \item \cjRL{\Large k*iniym} \textit{Key-neem} Lice
-        \item \cjRL{\Large `ArOb} \textit{Ah-rove} Insects
-        \item \cjRL{\Large d*EbEr} \textit{Deh-vehr} Cattle Disease
-        \item \cjRL{\Large +s:.hiyn} \textit{Sh'ch'een} Boils
-        \item \cjRL{\Large b*ArAd} \textit{Ba-rod} Hail
-        \item \cjRL{\Large 'ar:b*Eh} \textit{Ar-beh} Locusts
-        \item \cjRL{\Large .h+sEk:} \textit{Ch'oh-sheh'ch} Darkness
-        \item \cjRL{\Large mab*Ot b*:kOrOt} \textit{Mah-boat b'ch-oh-rote} Slaying of the First Born
+        \item \hebrewText{d*Am} \textit{Dahm} Blood
+        \item \hebrewText{.s:par:de`a} \textit{Tzeh-far-day-ah} Frogs
+        \item \hebrewText{k*iniym} \textit{Key-neem} Lice
+        \item \hebrewText{`ArOb} \textit{Ah-rove} Insects
+        \item \hebrewText{d*EbEr} \textit{Deh-vehr} Cattle Disease
+        \item \hebrewText{+s:.hiyn} \textit{Sh'ch'een} Boils
+        \item \hebrewText{b*ArAd} \textit{Ba-rod} Hail
+        \item \hebrewText{'ar:b*Eh} \textit{Ar-beh} Locusts
+        \item \hebrewText{.h+sEk:} \textit{Ch'oh-sheh'ch} Darkness
+        \item \hebrewText{mab*Ot b*:kOrOt} \textit{Mah-boat b'ch-oh-rote} Slaying of the First Born
     \end{enumerate}
 \end{multicols}
 
